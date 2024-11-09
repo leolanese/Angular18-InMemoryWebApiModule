@@ -1,5 +1,9 @@
 # Angular18 InMemoryWebApiModule
 
+```js
+npm i angular-in-memory-web-api 
+```
+
 > InMemoryWebApiModule does provide a mock API by intercepting HTTP requests made by the Angular application.
 
 1 - Interception of HTTP Requests: It catches HTTP requests directed to your backend (like GET, POST, PUT, DELETE) and instead routes them to an in-memory database defined in your AppData class.

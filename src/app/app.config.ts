@@ -2,7 +2,6 @@ import {ApplicationConfig,importProvidersFrom,provideZoneChangeDetection} from '
 import {PreloadAllModules,provideRouter,withPreloading} from '@angular/router';
 
 import {provideHttpClient,withXsrfConfiguration} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {AppData} from './app-data';
@@ -20,8 +19,11 @@ export const appConfig: ApplicationConfig = {
       })
     ),
     importProvidersFrom(
-      FormsModule,
-      InMemoryWebApiModule.forRoot(AppData, { delay: 100 })
+      InMemoryWebApiModule.forRoot(AppData, { 
+        delay: 100,
+        dataEncapsulation: false,
+        passThruUnknownUrl: true
+      })
     )
   ]
 };

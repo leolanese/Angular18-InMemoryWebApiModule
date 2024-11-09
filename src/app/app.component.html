@@ -1,3 +1,7 @@
 <div *ngFor="let product of products$ | async">
-  {{ product.name }} - ${{ product.price }}
+  <ul>
+    <li>
+      {{ product.name }} - ${{ product.price }}
+    </li>
+  </ul>
 </div>
