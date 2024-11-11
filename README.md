@@ -6,11 +6,17 @@ npm i angular-in-memory-web-api
 
 > InMemoryWebApiModule does provide a mock API by intercepting HTTP requests made by the Angular application.
 
-1 - Interception of HTTP Requests: It catches HTTP requests directed to your backend (like GET, POST, PUT, DELETE) and instead routes them to an in-memory database defined in your AppData class.
+1 - `Interception of HTTP Requests`: It catches HTTP requests directed to your backend (like GET, POST, PUT, DELETE) and instead routes them to an in-memory database defined in your AppData class.
 
-2 - Mock Data Response: The AppData service implements InMemoryDbService and provides a createDb method, which returns a set of mock data collections (similar to tables in a database). When a component makes an HTTP request, it retrieves data from these collections.
+2 - `Mock Data Response`: The AppData service implements InMemoryDbService and provides a createDb method, which returns a set of mock data collections (similar to tables in a Db). When a component makes an HTTP request, it retrieves data from these collections.
 
-3 - API-like Behavior: The module simulates a real API by supporting CRUD operations (Create, Read, Update, Delete), allowing you to test different scenarios in your app without needing a real server or database. You can specify options like delay to mimic network latency, adding realism to the development environment.
+3 - `API-like Behavior`: The module simulates a real API by supporting CRUD operations (Create, Read, Update, Delete), allowing you to test different scenarios in your app without needing a real server or database. You can specify options like delay to mimic network latency, adding realism to the development environment.
+
+## Setup
+
+```js
+npm i angular-in-memory-web-api
+```
 
 ---
 
