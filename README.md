@@ -18,6 +18,19 @@ npm i angular-in-memory-web-api
 npm i angular-in-memory-web-api
 ```
 
+```js
+// app.config.ts
+...
+    importProvidersFrom(
+      InMemoryWebApiModule.forRoot(AppData, { 
+        delay: 100,
+        dataEncapsulation: false,
+        passThruUnknownUrl: true
+      })
+    )
+```
+
+
 ---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
