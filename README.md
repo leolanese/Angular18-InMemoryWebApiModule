@@ -1,7 +1,7 @@
 # Angular18 InMemoryWebApiModule
 
 ```js
-npm i angular-in-memory-web-api 
+npm install angular-in-memory-web-api --save-dev
 ```
 
 > InMemoryWebApiModule does provide a mock API by intercepting HTTP requests made by the Angular application.
